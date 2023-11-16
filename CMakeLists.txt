@@ -31,7 +31,8 @@ if(UNIX)
 	set ( INCLUDE_DIRS 
 		"/usr/include"
 		"/usr/local/include"
-		"/usr/include/GL"
+		"/usr/include"
+		"/opt/homebrew/include"
 		${INCLUDE_DIRS}
 	)
 endif(UNIX)
@@ -39,7 +40,6 @@ endif(UNIX)
 include_directories (
 	${INCLUDE_DIRS}
 )
-	
 	
 set ( GLTOOLS_HDRS
 	"${CMAKE_SOURCE_DIR}/include/GLBatchBase.h"
